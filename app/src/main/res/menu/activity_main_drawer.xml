@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_course"
+            android:icon="@mipmap/course"
+            android:title="Course" />
+        <item
+            android:id="@+id/nav_profil"
+            android:icon="@mipmap/profile"
+            android:title="Profil" />
+        <item
+            android:id="@+id/nav_historique"
+            android:icon="@mipmap/his"
+            android:title="Historique" />
+        <item
+            android:id="@+id/nav_partager"
+            android:icon="@mipmap/share"
+            android:title="Partagez" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@mipmap/info"
+            android:title="Qui sommes-nous?" />
+    </group>
+
+    <item android:title=" ">
+        <menu>
+            <item
+                android:id="@+id/nav_off"
+                android:icon="@mipmap/off"
+                android:title="Déconnexion" />
+        </menu>
+    </item>
+
+</menu>

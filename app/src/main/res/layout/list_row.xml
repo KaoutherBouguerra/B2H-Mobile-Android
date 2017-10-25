@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:id="@+id/list_color"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    >
+    <!-- android:background="@drawable/list_row_selector"-->
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <com.example.macbook.box2homeclient.custom.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="edjfkdjfkldjfds"
+        android:layout_marginBottom="6dp"
+        android:id="@+id/txt_date"/>
+    <com.example.macbook.box2homeclient.custom.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="edjfkdjfkldjfds"
+        android:layout_marginBottom="6dp"
+        android:id="@+id/txt_adresse_debut"/>
+    <com.example.macbook.box2homeclient.custom.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="edjfkdjfkldjfds"
+        android:id="@+id/txt_adresse_fin"/>
+
+</LinearLayout>
+
+
+<com.example.macbook.box2homeclient.custom.CustomTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="19 $"
+    android:id="@+id/txt_prix"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

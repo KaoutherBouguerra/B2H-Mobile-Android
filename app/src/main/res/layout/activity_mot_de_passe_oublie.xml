@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:paddingLeft="22dp"
+    android:paddingRight="22dp"
+    android:gravity="center"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.macbook.box2homeclient.MotDePasseOublieActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout"
+    android:orientation="vertical">
+    <com.example.macbook.box2homeclient.custom.CustomTextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/forgot_pwd"
+        android:layout_marginBottom="32dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white" />
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"/>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" "
+        android:textColor="@android:color/darker_gray"
+        android:textColorHint="@android:color/darker_gray">
+
+        <com.example.macbook.box2homeclient.custom.CustomEditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@android:color/darker_gray"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/darker_gray"
+            android:textColorHighlight="@color/colorAccent" />
+
+    </android.support.design.widget.TextInputLayout>
+    <com.example.macbook.box2homeclient.custom.CustomButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_change_pwd"
+        android:background="@drawable/rectangle_button_shape"
+        android:textColor="@android:color/white"
+        android:text="@string/action_change_pwd"
+        android:layout_marginTop="26dp" />
+
+</LinearLayout>
+</RelativeLayout>

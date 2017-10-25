@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+     tools:context="com.example.macbook.box2homeclient.LoginActivity">
+
+    <!-- Login progress -->
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/login_form"
+            android:gravity="center">
+
+        <ProgressBar
+            android:id="@+id/login_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone" />
+
+        <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/logo" />
+            <LinearLayout
+                android:id="@+id/email_login_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/imageView2"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" "
+                    android:textColor="@android:color/darker_gray"
+                      >
+
+                    <com.example.macbook.box2homeclient.custom.CustomEditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/ic_msg"
+                        android:drawablePadding="16dp"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="16dp"
+                        android:hint="@string/prompt_email"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+
+                        android:textColorHint="@android:color/darker_gray"
+
+                        android:singleLine="true"
+                        android:textColor="@android:color/darker_gray"
+                        android:textColorHighlight="@color/colorAccent"
+                        android:textSize="16dp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" "
+                    android:textColor="@android:color/darker_gray"
+                    android:textColorHint="@android:color/darker_gray">
+
+                    <com.example.macbook.box2homeclient.custom.CustomEditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_password"
+                        android:imeActionId="@+id/login"
+                        android:imeOptions="actionUnspecified"
+                        app:hintEnabled="false"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+
+                        android:drawableLeft="@mipmap/locked"
+                        android:drawablePadding="16dp"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="16dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/darker_gray"
+                        android:textColorHighlight="@color/colorAccent"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textSize="16dp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <com.example.macbook.box2homeclient.custom.CustomTextView
+                    android:id="@+id/txt_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/colorAccent"
+                    android:text="@string/mot_de_passe_oublie" />
+
+                <com.example.macbook.box2homeclient.custom.CustomButton
+                    android:id="@+id/email_sign_in_button"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/rectangle_button_shape"
+                    android:textColor="@android:color/white"
+                    android:text="@string/action_sign_in"
+                      />
+
+                <com.example.macbook.box2homeclient.custom.CustomButton
+                    android:id="@+id/facebook_sign_in_button"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rectangle_button_shape"
+                    android:textColor="@android:color/white"
+                    android:drawableLeft="@mipmap/facebook"
+
+                    android:paddingLeft="20dp"
+
+                    android:text="@string/action_sign_in_fcb"
+                      />
+
+                <com.example.macbook.box2homeclient.custom.CustomButton
+                    android:id="@+id/email_sign_up_button"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_button_inscription_shape"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/white"
+                    android:text="@string/action_sign_up"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+</LinearLayout>
